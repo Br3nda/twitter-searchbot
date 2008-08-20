@@ -31,7 +31,7 @@ foreach my $t (@result) {
 }
 
 
-	my $results = $search->search($username);
+	my $results = $search->search($trigger);
  	foreach my $tweet (@{ $results }) {
  		my $speaker =  $tweet->{from_user};
         	my $text = $tweet->{text};
